@@ -86,9 +86,8 @@ README，使用markdown语言编写，工程自述文
   点击new sshkey将复制的密文复制进去即可
 
   
-
-  ![如下](https://picture.gptkong.com/20240610/1608d5cc79dfd44872a42ab80cfae42342.png)
-
+   <img src="https://picture.gptkong.com/20240610/1656c43cfe3eb1458d9ce7a79d510f3448.png">
+  
    * **测试关联是否完成**
    ```bash
    ssh -T git@github.com//ssh远程登录
