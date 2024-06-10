@@ -64,27 +64,37 @@ README，使用markdown语言编写，工程自述文
 *后续对仓库的操作，都要在仓库位置(master)
    ```
    <br>
+
   ```bash
   git config --list //查看git环境变量
-  ``` 
+  ```
+
   <br>
   * **修改或添加config配置项**
+
   ```bash
   git config --global user.name//用户名
   git config --global user.email//注册邮箱
   ```
+
   * **生成本机设备密文**
+
   ```bash
   ssh-keygen -t rsa -c“注册邮箱"   # 创建本地密文 *去对应的目录下查找密文文件
   ```
+
   <br>
   点击new sshkey将复制的密文复制进去即可
+
+  <img src="(https://picture.gptkong.com/20240610/1608d5cc79dfd44872a42ab80cfae42342.png">
+
   ![如下](https://picture.gptkong.com/20240610/1608d5cc79dfd44872a42ab80cfae42342.png)
 
    * **测试关联是否完成**
    ```bash
    ssh -T git@github.com//ssh远程登录
    ```
+
    <br>
    如果报端口错误
 
@@ -100,15 +110,17 @@ README，使用markdown语言编写，工程自述文
    IdentityFile ~/.ssh/id_rsa
    Port 443
    ```
+
 2. **为目标仓库起别名，定位目标仓库，后
 续上传**
    * 定位仓库
+
    ```bash
-git remote add test(别名)SSH地址 (云端仓库
-地址)
-git remote remove test
-#删除地址别名
-   ```
+	git remote add test(别名)SSH地址 (云端仓库
+	地址)
+	git remote remove test
+     	#删除地址别名
+    ```
 
 ## 本地设备与云端仓库的交互逻辑
 
