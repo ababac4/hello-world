@@ -34,7 +34,9 @@ sample:查询对应技术(socket)的
 一存储单位，默认的仓库主分支为master/main
 \*不仅可以管理代码存储，便于多人协作开发
 合作图
-![https://picture.gptkong.com/20240610/1555388086acf44e46b35e6c2766a6e6e1.png](https://picture.gptkong.com/20240610/1555388086acf44e46b35e6c2766a6e6e1.png])
+
+<img src="https://picture.gptkong.com/20240610/1656c43cfe3eb1458d9ce7a79d510f3448.png">
+
 
 ## 仓库内容
 1. Code，资源存储，代码资源，
