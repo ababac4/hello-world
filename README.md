@@ -85,7 +85,7 @@ README，使用markdown语言编写，工程自述文
   <br>
   点击new sshkey将复制的密文复制进去即可
 
-  <img src="(https://picture.gptkong.com/20240610/1608d5cc79dfd44872a42ab80cfae42342.png">
+  
 
   ![如下](https://picture.gptkong.com/20240610/1608d5cc79dfd44872a42ab80cfae42342.png)
 
@@ -248,4 +248,6 @@ using namespace std;
 ##超链接: \[\]\(\)  图片为\!\[\]\(\)
 
 [github](https://github.com/)
+![2]("https://picture.gptkong.com/20240610/16468d6f16e1a1472fa67bfe407a8bd680.jpg)
+
 <img src="https://picture.gptkong.com/20240610/16468d6f16e1a1472fa67bfe407a8bd680.jpg">
