@@ -247,7 +247,8 @@ using namespace std;
 ```
 ##超链接: \[\]\(\)  图片为\!\[\]\(\)
 
-[github](https://github.com/)
-![2]("https://picture.gptkong.com/20240610/16468d6f16e1a1472fa67bfe407a8bd680.jpg)
+[github](https://github.com)
+
+
 
 <img src="https://picture.gptkong.com/20240610/16468d6f16e1a1472fa67bfe407a8bd680.jpg">
