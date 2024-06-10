@@ -88,7 +88,7 @@ README，使用markdown语言编写，工程自述文
   点击new sshkey将复制的密文复制进去即可
 
   
-   <img src="https://picture.gptkong.com/20240610/1656c43cfe3eb1458d9ce7a79d510f3448.png">
+   <img src="https://picture.gptkong.com/20240610/17037e2d26d67440e9a20cfe8aabd3aada.png">
   
    * **测试关联是否完成**
    ```bash
