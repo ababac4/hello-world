@@ -82,7 +82,6 @@ README，使用markdown语言编写，工程自述文
   ```bash
   ssh-keygen -t rsa -c“注册邮箱"   # 创建本地密文 *去对应的目录下查找密文文件
   ```
-
   <br>
   点击new sshkey将复制的密文复制进去即可
 
@@ -124,6 +123,63 @@ README，使用markdown语言编写，工程自述文
 
 ## 本地设备与云端仓库的交互逻辑
 
+<img src="https://picture.gptkong.com/20240610/16317dbb1f13ee4a1cb43b4eae20157c92.png">
+
+### 添加文件步骤
+```bash
+vi test.c//文件名
+//写入内容后
+```
+
+```bash
+git add test.c //将文件放入git缓冲区
+git commit -m "提交tips"
+git push test//仓库别名 master//分支
+```
+
+如果本地和git仓库上修改前一致，合并即可
+
+
+### 删除文件
+```bash
+rm 本地文件
+git status//查看此时状态 可以看到删除的文件
+git restore //复位被删除的文件
+
+git rm code.c //删除本地和仓库的文件
+
+git commit -m "tips"//删除提示
+git push test mastet //更新本地和仓库文件
+```
+
+### github仓库修改文件和本地不一致解决方法
+#### 代码更新的依赖关系被破坏
+**本地内容要比云端新,完成更新替换， 但是如果直接
+修改云端内容,导致,本地内容无法再次提交**
+
+1. 首先使用pull命令将仓库中的内容拉出来
+```bash
+git pull --rebase test//别名 master
+```
+
+2. 合并操作
+```bash
+git rebase --abort #忽略新版，此时还不能上
+传
+
+git rebase --skip  #需略旧版，更新本地后可
+以上传
+
+git rebase --continue #版本合并，解决冲突后可
+以直接上
+```
+3. 合并后修改需要的内容重复上串操作即可
+
+
+## 下载代码
+```bash
+git clone ssh地址//code中寻找
+```
 
 
 \<br\>换行符号
@@ -192,3 +248,4 @@ using namespace std;
 ##超链接: \[\]\(\)  图片为\!\[\]\(\)
 
 [github](https://github.com/)
+<img src="https://picture.gptkong.com/20240610/16468d6f16e1a1472fa67bfe407a8bd680.jpg">
